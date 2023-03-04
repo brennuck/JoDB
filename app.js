@@ -1,5 +1,7 @@
 require("dotenv").config();
+const { Router } = require("express");
 const express = require("express");
+const { default: db } = require("./mongo.mjs");
 const app = express();
 
 app.use(express.static("public"));
@@ -14,6 +16,13 @@ app.get("/", (req, res) => {
 
 app.get("/hello", (req, res) => {
     res.send("<h1>Hello World!</h1>");
+});
+
+app.get("/updates", async (req, res) => {
+    let collection = await db.collection("updates");
+    let results = await collection.find().toArray();
+
+    res.send(results).status(200);
 });
 
 app.listen(process.env.PORT || 5000, () => {
