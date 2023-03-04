@@ -1,8 +1,9 @@
 require("dotenv").config();
-const { Router } = require("express");
 const express = require("express");
 const { default: db } = require("./mongo.mjs");
 const app = express();
+
+import { db } from "./mongo.mjs";
 
 app.use(express.static("public"));
 
