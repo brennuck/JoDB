@@ -3,6 +3,7 @@ dotenv.config();
 import express from "express";
 import cors from "cors";
 import updates from "./routes/updates.mjs";
+import countdown from "./routes/countdown.mjs";
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.use("/updates", updates);
+app.use("/countdown", countdown);
 
 app.use((err, _req, res, next) => {
     res.status(500).send("Uh oh! An unexpected error occured.");
