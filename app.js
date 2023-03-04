@@ -6,10 +6,12 @@ app.use(express.static("public"));
 
 const port = 3000;
 
+console.log("port", process.env.port);
+
 app.get("/", (req, res) => {
     res.send("<h1>Hello World!</h1>");
 });
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}!`);
+app.listen(3000, () => {
+    console.log(`Example app listening on port ${3000}!`);
 });
