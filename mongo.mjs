@@ -15,5 +15,3 @@ try {
 }
 
 export let db = conn.db("prod_updates");
-
-// export default db;
