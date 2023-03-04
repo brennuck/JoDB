@@ -12,4 +12,16 @@ router.get("/", async (req, res) => {
     res.send(results).status(200);
 });
 
+router.patch("/update", async (req, res) => {
+    const query = { _id: new ObjectId("6403b7083f72fbec3d878f5e") };
+    const updates = {
+        $set: { coutdown: req.body.coutdown },
+    };
+
+    let collection = await db.collection("countdown");
+    let result = await collection.updateOne(query, updates);
+
+    res.send(result).status(200);
+});
+
 export default router;
