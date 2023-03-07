@@ -29,7 +29,30 @@ router.post("/text", async (req, res) => {
     const accountSid = process.env.TWILIO_ACCOUNT_SID;
     const authToken = process.env.TWILIO_AUTH_TOKEN;
     const client = twilio(accountSid, authToken);
-    const numbers = ["+18018577283", "+18018792933"];
+    const numbers = [
+        "+18018577283",
+        "+18018792933",
+        "+18018706437",
+        "+18017194724",
+        "+18015549742",
+        "+18015540924",
+        "+18018797921",
+        "+18014482502",
+        "+18015052098",
+        "+18015052098",
+        "+18014482334",
+        "+18018705507",
+        "+13852042525",
+        "+18013863522",
+        "+18018703513",
+        "+18018210113",
+        "+18018705657",
+        "+18019398995",
+        "+13854450886",
+        "+13852530084",
+        "+14357730614",
+        "+15095917659",
+    ];
 
     numbers.map((number, index) => {
         setTimeout(() => {
