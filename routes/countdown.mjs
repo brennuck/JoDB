@@ -26,7 +26,7 @@ router.patch("/update", async (req, res) => {
 });
 
 router.post("/text", async (req, res) => {
-    const accountSid = "ACbb47c0aec3e6118ee42f8435a3662894";
+    const accountSid = process.env.TWILIO_ACCOUNT_SID;
     const authToken = process.env.TWILIO_AUTH_TOKEN;
     const client = twilio(accountSid, authToken);
     const numbers = ["+18018577283", "+18018792933"];
