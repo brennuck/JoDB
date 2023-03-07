@@ -25,27 +25,4 @@ router.post("/", async (req, res) => {
     res.send(result).status(204);
 });
 
-// // Update the post with a new comment
-// router.patch("/comment/:id", async (req, res) => {
-//     const query = { _id: ObjectId(req.params.id) };
-//     const updates = {
-//         $push: { comments: req.body },
-//     };
-
-//     let collection = await db.collection("posts");
-//     let result = await collection.updateOne(query, updates);
-
-//     res.send(result).status(200);
-// });
-
-// // Delete an entry
-// router.delete("/:id", async (req, res) => {
-//     const query = { _id: ObjectId(req.params.id) };
-
-//     const collection = db.collection("posts");
-//     let result = await collection.deleteOne(query);
-
-//     res.send(result).status(200);
-// });
-
 export default router;

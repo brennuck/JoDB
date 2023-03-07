@@ -1,6 +1,7 @@
 import express from "express";
 import { db } from "../mongo.mjs";
 import { ObjectId } from "mongodb";
+import { default as twilio } from "twilio";
 
 const router = express.Router();
 
@@ -22,6 +23,23 @@ router.patch("/update", async (req, res) => {
     let result = await collection.updateOne(query, updates);
 
     res.send(result).status(200);
+});
+
+router.post("/text", async (req, res) => {
+    const accountSid = "ACbb47c0aec3e6118ee42f8435a3662894";
+    const authToken = process.env.TWILIO_AUTH_TOKEN;
+    const client = twilio(accountSid, authToken);
+    const numbers = ["+18018577283", "+18018792933"];
+
+    numbers.map((number, index) => {
+        setTimeout(() => {
+            client.messages.create({
+                body: "Hospital Journey Updates\nKayla and Brennon are on their way to the hospital to give birth\nFollow along their journey at https://journieupdates.com/",
+                from: "+15746525521",
+                to: number,
+            });
+        }, 2000 * index);
+    });
 });
 
 export default router;
