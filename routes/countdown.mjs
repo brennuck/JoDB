@@ -33,9 +33,9 @@ router.patch("/update", async (req, res) => {
 router.post("/text", async (req, res) => {
     const numbers = process.env.NUMBERS.split(" ");
 
-    numbers.map((number, index) => {
-        console.log("number", number);
-    });
+    // numbers.map((number, index) => {
+    //     console.log("number", number);
+    // });
     // await vonage.sms
     //     .send({
     //         to: "18018792933",
