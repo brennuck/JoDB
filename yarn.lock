@@ -817,6 +817,151 @@
     "@types/node" "*"
     "@types/webidl-conversions" "*"
 
+"@vonage/accounts@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vonage/accounts/-/accounts-1.2.0.tgz#e0c56a6e54acf498a84e7fbf1d40d3251ff62719"
+  integrity sha512-cd5YzEi9w5K3pVjLgmWdpdlIJpm30SPlk8MM1+TeE6U99HVGkUESdg9LQF/wWe+HXXp9mNcd8U7sxBzfXB9upg==
+  dependencies:
+    "@vonage/server-client" "^1.2.0"
+
+"@vonage/applications@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vonage/applications/-/applications-1.2.0.tgz#e49b82f5851f608d5aaa4a511d73eb7c8b38b9c4"
+  integrity sha512-ybEfiUm5khBI/wsp4Zn+rQjoiG9zrTGAMTKxlbXjXg+mi+oJPBitTuIU63eRC/h2/H7gGLQkAi/GK9UI/YGvrQ==
+  dependencies:
+    "@vonage/auth" "^1.1.2"
+    "@vonage/server-client" "^1.2.0"
+    "@vonage/vetch" "^1.1.2"
+
+"@vonage/auth@^1.0.10", "@vonage/auth@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@vonage/auth/-/auth-1.1.2.tgz#554d6df1ad14ed1b018173776d8bf70af8fdbd48"
+  integrity sha512-DUXEAtIlhTPiF54nn+FptEQKDKy78CcYdL936uQUrNCZSFm0tJaHgEM2HSbRdbgbxzyYI7fcEmpZbTbxCxt4ZA==
+  dependencies:
+    "@vonage/jwt" "^1.1.2"
+    debug "^4.3.4"
+
+"@vonage/jwt@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@vonage/jwt/-/jwt-1.1.2.tgz#ad1b82e3bc58f020874634f17cedae0132da3f48"
+  integrity sha512-H8I+lZzDItDfUB0gySGBtne+zQ2XtyBOfGR+C/qFQojEVQE8kXeJu5EPcyFBkqyrO9b64JdMdJMZAaMMmbyK0A==
+  dependencies:
+    debug "^4.3.4"
+    jsonwebtoken "^9.0.0"
+    uuid "^9.0.0"
+
+"@vonage/messages@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vonage/messages/-/messages-1.2.0.tgz#2042e42e3903a0e0d1a90a244ed5d35af7bd27a0"
+  integrity sha512-FDloGrRD8b5j/fGjOOGxKkZ2LcdfOVlmcfiLrRYgSlRpglwwmmXqs5+49w1sr9hrnqoN+NFNS2rK048OrKUZJA==
+  dependencies:
+    "@vonage/auth" "^1.1.2"
+    "@vonage/server-client" "^1.2.0"
+    "@vonage/vetch" "^1.1.2"
+
+"@vonage/number-insights@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vonage/number-insights/-/number-insights-1.2.0.tgz#6e6c9009335871b140acc443dacc1b8c80297aba"
+  integrity sha512-V7J9rBYIGhKYKq/G3NGQi3rXjXXKiK8+0VMN0pncWZyvzsfdFScYmyDxb6gUSaHogcLZWIuO6SdeT0hm3fctlQ==
+  dependencies:
+    "@vonage/auth" "^1.1.2"
+    "@vonage/server-client" "^1.2.0"
+    "@vonage/vetch" "^1.1.2"
+
+"@vonage/numbers@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vonage/numbers/-/numbers-1.2.0.tgz#104531057204f711fa27db190f4eb3d452f208a9"
+  integrity sha512-oeBJXq0C1++UzhgHFBjQYfqZx0p+mEmFcq2rWqXgz5cH13HZ54cAsnKEaU3I9CvhbhblFVt3l7woW9hF8fJc2A==
+  dependencies:
+    "@vonage/auth" "^1.1.2"
+    "@vonage/server-client" "^1.2.0"
+    "@vonage/vetch" "^1.1.2"
+    lodash.omit "^4.5.0"
+
+"@vonage/pricing@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vonage/pricing/-/pricing-1.2.0.tgz#af7e59096bf5415a5229ac6ce882eb9844f95d9b"
+  integrity sha512-7jbYB03svMIhrLSLvggRI4BCi9prAetwGKN6jK9qHSjhqcB0Uyo3mpj8YXBaVKfChMtEpMfUwdWhtR0W5OsW+Q==
+  dependencies:
+    "@vonage/auth" "^1.1.2"
+    "@vonage/server-client" "^1.2.0"
+    "@vonage/vetch" "^1.1.2"
+
+"@vonage/redact@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@vonage/redact/-/redact-1.1.0.tgz#ec798d472d7e481bf2b8c765fdf1092e548cb008"
+  integrity sha512-aJoLwS39wfMwPkWX1e/LBlz1jNxdQFtPgRSqvL8S3e0XHy8Jfv99Rrof9nmvEm1xoRY9deLS1tRdoJQJhJHqKA==
+  dependencies:
+    "@vonage/server-client" "^1.2.0"
+
+"@vonage/server-client@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vonage/server-client/-/server-client-1.2.0.tgz#c0e4b5de04189208d151e2b0aadd5fb3ca3586f7"
+  integrity sha512-tjsl1HOJQ2GuOwLM17+7Ul1cxqa+x4aAf9hLmQC5s2IW/OnoSApYe2QLJ0BCGxyARIiTFz2k8N6flW0DzixVUw==
+  dependencies:
+    "@vonage/auth" "^1.1.2"
+    "@vonage/vetch" "^1.1.2"
+    debug "^4.3.4"
+    lodash.camelcase "^4.3.0"
+    lodash.isobject "3.0.2"
+    lodash.kebabcase "^4.1.1"
+    lodash.partial "^4.2.1"
+    lodash.snakecase "^4.1.1"
+
+"@vonage/server-sdk@^3.2.0":
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/@vonage/server-sdk/-/server-sdk-3.2.0.tgz#0487ad4d73069ceca08bda5a0c0dfd3812f3fa66"
+  integrity sha512-YRySGU9FvHkXSt9vWYOCPy8MPlNgu5b0l9+tqMQIgjlCa9FBP+nLm9a5ZWeawefT83/l0iHBzvgO3l9wjverNw==
+  dependencies:
+    "@vonage/accounts" "^1.2.0"
+    "@vonage/applications" "^1.2.0"
+    "@vonage/auth" "^1.0.10"
+    "@vonage/messages" "^1.2.0"
+    "@vonage/number-insights" "^1.2.0"
+    "@vonage/numbers" "^1.2.0"
+    "@vonage/pricing" "^1.2.0"
+    "@vonage/redact" "^1.1.0"
+    "@vonage/sms" "^1.2.0"
+    "@vonage/verify" "^1.2.0"
+    "@vonage/vetch" "^1.0.11"
+    "@vonage/voice" "^1.2.0"
+
+"@vonage/sms@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vonage/sms/-/sms-1.2.0.tgz#900afcd290779eb11210f52178a98b0881c7a275"
+  integrity sha512-FqU3cGsh7M/Tow8m+j9yA3/CWDWokCMSqMb04Xc+uFkVxSbdQdSpGh3cqeH8dtFIZOWiWILCk6d6EDAIYGXvbA==
+  dependencies:
+    "@vonage/server-client" "^1.2.0"
+    debug "^4.3.4"
+
+"@vonage/verify@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vonage/verify/-/verify-1.2.0.tgz#7540c2436faae80e5eda7020edf9ba259d9434bb"
+  integrity sha512-b4U8yKUyjqsdy9FZ7Uj0hG3ou8VH/SLUK2IklJ+YfzIrO/oaTHd6tLUeUxnw6y+2wEejrBLMSXzc/DV6bpV4CA==
+  dependencies:
+    "@vonage/auth" "^1.1.2"
+    "@vonage/server-client" "^1.2.0"
+    "@vonage/vetch" "^1.1.2"
+    lodash.omit "^4.5.0"
+
+"@vonage/vetch@^1.0.11", "@vonage/vetch@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@vonage/vetch/-/vetch-1.1.2.tgz#52f0961258d898c1d2613885066ec8932d1b061c"
+  integrity sha512-Fl/ezKhP5ceB+HkAbTtp/lIVsbxh4wGFJ7Y153mtgC6U+IVWz6s4VL8ENTRWiK2to7AJ6ahYqXvjVVElR+bbBg==
+  dependencies:
+    debug "^4.3.4"
+    lodash.merge "^4.6.2"
+    node-fetch "^2.6"
+
+"@vonage/voice@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@vonage/voice/-/voice-1.2.0.tgz#385365efa1e6dc9aecc89a383790c28115154eab"
+  integrity sha512-d/rBKy4TJga2knKLPDQcZXuKXHgnrrXJtIASD+vpURZpfMNWUgP3ddwYshVUPAB+xP735KKtCGXyUrAKjLQ3qg==
+  dependencies:
+    "@vonage/auth" "^1.1.2"
+    "@vonage/server-client" "^1.2.0"
+    "@vonage/vetch" "^1.1.2"
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
@@ -2639,6 +2784,11 @@ lodash._reinterpolate@^3.0.0:
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
   integrity sha512-xYHt68QRoYGjeeM/XOE1uJtvXQAgvszfBhjV4yvsQH0u2i9I6cI6c6/eG4Hh3UAOVn0y/xAXwmTzEay49Q//HA==
 
+lodash.camelcase@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
+  integrity sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==
+
 lodash.defaults@^4.1.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
@@ -2649,6 +2799,16 @@ lodash.flatten@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.flatten/-/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
   integrity sha512-C5N2Z3DgnnKr0LOpv/hKCgKdb7ZZwafIrsesve6lmzvZIRZRGaZ/l6Q8+2W7NaT+ZwO3fFlSCzCzrDCFdJfZ4g==
 
+lodash.isobject@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/lodash.isobject/-/lodash.isobject-3.0.2.tgz#3c8fb8d5b5bf4bf90ae06e14f2a530a4ed935e1d"
+  integrity sha512-3/Qptq2vr7WeJbB4KHUSKlq8Pl7ASXi3UG6CMbBm8WRtXi8+GHm7mKaU3urfpSEzWe2wCIChs6/sdocUsTKJiA==
+
+lodash.kebabcase@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz#8489b1cb0d29ff88195cceca448ff6d6cc295c36"
+  integrity sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==
+
 lodash.keyby@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.keyby/-/lodash.keyby-4.6.0.tgz#7f6a1abda93fd24e22728a4d361ed8bcba5a4354"
@@ -2658,6 +2818,21 @@ lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+
+lodash.omit@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
+  integrity sha512-XeqSp49hNGmlkj2EJlfrQFIzQ6lXdNro9sddtQzcJY8QaoC2GO0DT7xaIokHeyM+mIT0mPMlPvkYzg2xCuHdZg==
+
+lodash.partial@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/lodash.partial/-/lodash.partial-4.2.1.tgz#49f3d8cfdaa3bff8b3a91d127e923245418961d4"
+  integrity sha512-qsiGr0kiA31O7chhmKSUiEGtxXnYtwmaJF00TPAUW79C5PCfaVeLTUN3sLT+rEPcqZooPtiFcGhnphQzFhkqmg==
+
+lodash.snakecase@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.snakecase/-/lodash.snakecase-4.1.1.tgz#39d714a35357147837aefd64b5dcbb16becd8f8d"
+  integrity sha512-QZ1d4xoBHYUeuouhEq3lk3Uq7ldgyFXGBhg04+oRLnIz8o9T65Eh+8YdroUwn846zchkA9yDsDl5CVVaV2nqYw==
 
 lodash.sortby@^4.7.0:
   version "4.7.0"
@@ -2884,7 +3059,7 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
-node-fetch@^2.2.0, node-fetch@^2.6.7:
+node-fetch@^2.2.0, node-fetch@^2.6, node-fetch@^2.6.7:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.9.tgz#7c7f744b5cc6eb5fd404e0c7a9fec630a55657e6"
   integrity sha512-DJm/CJkZkRjKKj4Zi4BsKVZh3ValV5IR5s7LVZnW+6YMh0W1BfNA8XSs6DLMGYlId5F3KnA70uu2qepcR08Qqg==
@@ -4010,6 +4185,11 @@ uuid@^8.3.0, uuid@^8.3.1, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
+
+uuid@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.0.tgz#592f550650024a38ceb0c562f2f6aa435761efb5"
+  integrity sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
 
 valid-url@^1.0.9:
   version "1.0.9"

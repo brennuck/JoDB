@@ -1,9 +1,14 @@
 import express from "express";
 import { db } from "../mongo.mjs";
 import { ObjectId } from "mongodb";
-import { default as twilio } from "twilio";
+import { Vonage } from "@vonage/server-sdk";
 
 const router = express.Router();
+
+const vonage = new Vonage({
+    apiKey: process.env.VONAGE_API_KEY,
+    apiSecret: process.env.VONAGE_API_SECRET,
+});
 
 router.get("/", async (req, res) => {
     let collection = await db.collection("countdown");
@@ -26,43 +31,25 @@ router.patch("/update", async (req, res) => {
 });
 
 router.post("/text", async (req, res) => {
-    const accountSid = process.env.TWILIO_ACCOUNT_SID;
-    const authToken = process.env.TWILIO_AUTH_TOKEN;
-    const client = twilio(accountSid, authToken);
-    const numbers = [
-        "+18018577283",
-        "+18018792933",
-        "+18018706437",
-        "+18017194724",
-        "+18015549742",
-        "+18015540924",
-        "+18018797921",
-        "+18014482502",
-        "+18015052098",
-        "+18015052098",
-        "+18014482334",
-        "+18018705507",
-        "+13852042525",
-        "+18013863522",
-        "+18018703513",
-        "+18018210113",
-        "+18018705657",
-        "+18019398995",
-        "+13854450886",
-        "+13852530084",
-        "+14357730614",
-        "+15095917659",
-    ];
+    const numbers = process.env.NUMBERS.split(" ");
 
     numbers.map((number, index) => {
-        setTimeout(() => {
-            client.messages.create({
-                body: "Hospital Journey Updates\nKayla and Brennon are on their way to the hospital to give birth\nFollow along their journey at https://journieupdates.com/",
-                from: "+15746525521",
-                to: number,
-            });
-        }, 2000 * index);
+        console.log("number", number);
     });
+    // await vonage.sms
+    //     .send({
+    //         to: "18018792933",
+    //         from: process.env.VONAGE_FROM_NUMBER,
+    //         text: "Hospital Journey Updates\nKayla and Brennon are on their way to the hospital to give birth\nFollow along their journey at https://journieupdates.com/",
+    //     })
+    //     .then((resp) => {
+    //         console.log("Message sent successfully");
+    //         console.log(resp);
+    //     })
+    //     .catch((err) => {
+    //         console.log("There was an error sending the messages.");
+    //         console.error(err);
+    //     });
 });
 
 export default router;
